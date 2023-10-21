@@ -2,6 +2,11 @@
 
 Readline motions and deletions in Neovim.
 
+## NOTE
+
+This was forked from `linty-org/readline.nvim`. That user's entire account was deleted without
+notice so I've imported it here to preserve it.
+
 ## Introduction
 
 The [Readline](https://en.wikipedia.org/wiki/GNU_Readline) text-editing shortcuts let you do things like move the cursor or delete text by a word or a line at a time. The Readline shortcuts are enabled by default all over the place: for example, in the major shells (Bash, Zsh, fish), in programming language REPLs, and [even in macOS](https://support.apple.com/en-us/HT201236). So you should probably use them if you aren't already!
