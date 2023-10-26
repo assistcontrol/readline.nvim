@@ -5,7 +5,24 @@ Readline motions and deletions in Neovim.
 ## NOTE
 
 This was forked from `linty-org/readline.nvim`. That user's entire account was deleted without
-notice so I've imported it here to preserve it.
+notice so I've imported it here to preserve it. I have no plans to maintain or develop it
+further; it exists here primarily for preservation.
+
+While its functionality is fantastic, many of its mappings can be replicated much more
+succinctly without using this plugin at all:
+
+```lua
+-- Insert mode
+vim.keymap.set('i', '<C-a>', '<C-o>^')
+vim.keymap.set('i', '<C-e>', '<C-o>$')
+vim.keymap.set('i', '<C-k>', '<C-o>C')
+
+-- Command mode
+vim.keymap.set('c', '<C-a>', '<Home>')
+vim.keymap.set('c', '<C-e>', '<End>')
+```
+
+`<C-w>` and `<C-u>` already behave fine out-of-the-box.
 
 ## Introduction
 
